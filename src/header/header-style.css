@@ -1,0 +1,59 @@
+.headerStyle {
+  margin-top: 2em;
+}
+
+.titlePanel {
+  display: flex;
+  align-items: center;
+}
+
+.titleStyle {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  font-size: xxx-large;
+}
+
+.authPanel{
+  width: 20%;
+  height: auto;
+  text-align: center;
+}
+
+.avatar{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.userName{
+  margin-top: 8px;
+}
+
+.headerBtn {
+  overflow: hidden;
+  border-bottom: 2px solid darkslategray;
+  background-color: white;
+}
+
+.headerBtn a{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.headerBtn a:hover{
+  background-color: lightgreen;
+}
+
+.headerBtn a.active{
+  background-color: darkolivegreen;
+}

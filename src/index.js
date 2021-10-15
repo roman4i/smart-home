@@ -1,6 +1,6 @@
-import './style.css'
+import insertHeader from './header/header';
 
-const heading = document.createElement('div')
-heading.textContent = 'Таки работает!'
+const root = document.getElementById('root');
 
-document.getElementById('root').append(heading);
+root.append(insertHeader());
+
