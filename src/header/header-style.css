@@ -1,20 +1,59 @@
 .headerStyle {
-  display: flex;
   margin-top: 2em;
 }
 
-.btnsGroupHead {
+.titlePanel {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  align-items: center;
+}
+
+.titleStyle {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  font-size: xxx-large;
+}
+
+.authPanel{
+  width: 20%;
+  height: auto;
+  text-align: center;
+}
+
+.avatar{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.userName{
+  margin-top: 8px;
 }
 
 .headerBtn {
-  width: 100px;
-  height: 30px;
-  background-color: azure;
-  color: firebrick;
-  font-weight: bolder;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  overflow: hidden;
+  border-bottom: 2px solid darkslategray;
+  background-color: white;
+}
+
+.headerBtn a{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.headerBtn a:hover{
+  background-color: lightgreen;
+}
+
+.headerBtn a.active{
+  background-color: darkolivegreen;
 }
