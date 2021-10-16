@@ -1,0 +1,29 @@
+.itemBoxStyle {
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    border: black 2px solid;
+    margin-right: 20px;
+    padding: 15px;
+}
+
+.boxTitle{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.boxContent {
+    text-decoration: darkolivegreen;
+    margin-bottom: 20px;
+}
+
+.menu {
+    margin: 20px;
+    display: flex;
+}
+
+.mainBlock {
+    margin-left: 10px;
+    margin-right: 10px;
+}
