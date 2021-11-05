@@ -4,13 +4,16 @@ import "./header-style.css";
 
 const buttonsData = [
   {
-    text: "Button1"
+    text: "Home",
+    path: 'home',
   },
   {
-    text: "Button2"
+    text: "Sensors",
+    path: 'sensors',
   },
   {
-    text: "Button3"
+    text: "Settings",
+    path: 'settings',
   }
 ];
 
