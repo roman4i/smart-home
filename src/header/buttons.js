@@ -1,4 +1,3 @@
-import menuBlock from "../menus";
 import setRoute from "../router/path";
 
 export default function createButton(data) {

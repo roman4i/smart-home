@@ -2,6 +2,10 @@ import menuItem from "./menuItem";
 import homePage from "./home";
 import settingsPage from "./settings";
 import errorPage from "./wrongPath";
+import fakeAPI from "../../utils/fakeAPI";
+
+const API = new fakeAPI();
+const sensContent = API.getSensorsData();
 
 let expData = {
     title: 'Title',
@@ -24,6 +28,7 @@ export default function mainMenu(part) {
             for (let i=0; i<3; i++) {
                 menu.append(menuItem(expData));
             }
+            console.log(sensContent);
         break;
         default:
             menu.append(errorPage());
