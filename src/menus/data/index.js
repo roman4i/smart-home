@@ -7,11 +7,6 @@ import fakeAPI from "../../utils/fakeAPI";
 const API = new fakeAPI();
 const sensContent = API.getSensorsData();
 
-let expData = {
-    title: 'Title',
-    data: 'Data 123',
-};
-
 export default function mainMenu(part) {
     const menu = document.createElement('div');
     menu.className = 'menu';
@@ -25,10 +20,9 @@ export default function mainMenu(part) {
             menu.append(settingsPage());
         break;
         case 'sensors':
-            for (let i=0; i<3; i++) {
-                menu.append(menuItem(expData));
+            for (let key in sensContent) {
+                menu.append(menuItem(sensContent[key]));
             }
-            console.log(sensContent);
         break;
         default:
             menu.append(errorPage());

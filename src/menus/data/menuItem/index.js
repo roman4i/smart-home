@@ -1,18 +1,29 @@
+const itemTitle = (text) => {
+    const title = document.createElement('div');
+    title.innerText = text;
+    title.className = 'boxTitle';
+
+    return title;
+}
+
+const itemDataLine = (name, value) => {
+    const dataLine = document.createElement('div');
+    dataLine.className = 'boxContent';
+    dataLine.innerText = name + ' ' + value;
+
+    return dataLine;
+}
+
 export default function menuItem(itemData) {
     const itemBox = document.createElement('div');
     itemBox.className = 'itemBoxStyle';
 
-    const title = document.createElement('div');
-    title.innerText = itemData.title;
-    title.className = 'boxTitle';
+    itemBox.append(itemTitle(itemData.name));   //title
 
-    // here must be an algorithm for multiply data lines
-    const dataLine = document.createElement('div');
-    dataLine.className = 'boxContent';
-    dataLine.innerText = itemData.data;
-
-    itemBox.append(title);
-    itemBox.append(dataLine);
+    // lines with sensors data
+    for(let key in itemData.data) {
+        itemBox.append(itemDataLine(key, itemData.data[key]))
+    }
 
     return itemBox;
 }
