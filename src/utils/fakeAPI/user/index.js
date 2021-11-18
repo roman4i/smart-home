@@ -2,11 +2,11 @@ export default function userData() {
     const data = {
         usr1: {
             username: "Guest",
-            avatar: "type1",
+            avatar: "gray",
         },
         usr2: {
             username: "Roman",
-            avatar: "type2",
+            avatar: "red",
         },
     }
 
