@@ -19,11 +19,9 @@
 }
 
 .menu {
-    margin: 20px;
     display: flex;
 }
 
 .mainBlock {
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 20px;
 }

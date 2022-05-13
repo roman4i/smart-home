@@ -7,23 +7,22 @@ let toSession = {
     action: 'read',
     type: 'username',
     payload: '',
-}
-
-let user = sessionStor(toSession);
-
-const checkLogin = (log) => {
-    let avatarColor = 'gray';
-    for (let key in usersData) {
-        if (log == usersData[key].username) {
-            avatarColor = usersData[key].avatar;
-            break;
-        }
     }
 
-    return avatarColor;
-}
-
 export default function authPanel() {
+    let user = sessionStor(toSession);
+
+    const checkLogin = (log) => {
+        let avatarColor = 'gray';
+        for (let key in usersData) {
+            if (log == usersData[key].username) {
+                avatarColor = usersData[key].avatar;
+                break;
+            }
+        }
+
+        return avatarColor;
+    }
     const authPan = document.createElement('div');
     authPan.className = 'authPanel';
 
